@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #490095;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.08;
+}
+
+.backgroundImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background: #440086;
+}
+
+.nav-icon {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-icon.active {
+  background: #fcd34d;
+}
+
+.nav-icon:hover {
+  transform: scale(1.1);
+}
+
+.icon-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.main-container {
+  padding: 40px 60px;
+  min-height: calc(100vh - 120px);
+}
+
+.page-title {
+  color: white;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.profile-avatar {
+  text-align: center;
+  margin-right: 250px;
+}
+
+.avatar-circle {
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  
+}
+
+.avatar-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  color: white;
+}
+
+.profile-info h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.profile-info p {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.set-profile-btn,
+.logout-btn {
+  padding: 15px 40px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  color: #8b5cf6;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.logout-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
